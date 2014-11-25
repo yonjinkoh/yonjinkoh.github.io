@@ -1,3 +1,8 @@
+/*extras*/
+
+.adorable_photo img {width: 100% !important;}
+
+
 /* Global */
 
 .tk-lust-script {
@@ -30,11 +35,11 @@ body {
 	width:100%;
 }
 ::selection {
-	background: #df4d58;
+	background: #4d4d4d;
 	color:#fff;
 }
 ::-moz-selection {
-	background: #df4d58; /* Firefox */
+	background: #4d4d4d; /* Firefox */
 	color:#fff;
 }
 img {
@@ -46,14 +51,14 @@ img {
 }
 
 a:link {
-	color: #df4d58;
+	color: #4d4d4d;
 	text-decoration: none;
 }
 a:hover {
 	color:#4D4D4D;
 }
 a:visited {
-	color: #df4d58;
+	color: #4d4d4d;
 	text-decoration: none;
 }
 
@@ -280,7 +285,7 @@ img.icon_img {
 	padding:17px 78px 16px 33px;
 	border:none;
 	text-transform:uppercase;
-	background:#df4d58;
+	background:#4d4d4d;
 	font-family: 'Cabin', sans-serif;
 	font-size: 19px;
 	line-height: 19px;
@@ -335,9 +340,10 @@ img.icon_img {
 	padding:33px 0 0 0;
 }
 .bride_foto {
-	float:left;
-	border-radius:50%;
-	margin:0 18px 10px 0;
+/*	float:left;
+*/	border-radius:50%;
+	margin:0 auto;
+	display: block;
 }
 
 .icon_heart {
@@ -567,7 +573,7 @@ a.slct, a.slct2, .name_form {
 	font-weight:300;
 	text-align: center;
 	vertical-align: middle;
-	background:#df4d58;
+	background:#4d4d4d;
 	transition: all 0.2s ease-in-out;
 	-moz-transition: all 0.2s ease-in-out;
 	-webkit-transition: all 0.2s ease-in-out;
@@ -660,6 +666,7 @@ a.slct, a.slct2, .name_form {
 	padding:57px 15px 15px 15px;
 	background:#fff;
 	font-family: 'Cabin', sans-serif;
+	font-size: 12px;
 	font-weight:300;
 	text-align:center;
 	color:#343434;
@@ -686,7 +693,7 @@ a.slct, a.slct2, .name_form {
 	border-bottom:1px dotted #cecece;
 	font-family: 'Cabin', sans-serif;
 	font-size: 18px;
-	color: #df4d58;
+	color: #4d4d4d;
 	line-height: 26px;
 	font-weight: 300;
 	text-transform:uppercase;
@@ -752,7 +759,7 @@ a.slct, a.slct2, .name_form {
 	color:#979797;
 }
 .copyright a {
-	color:#df4d58;
+	color:#4d4d4d;
 }
 .copyright a:hover {text-decoration:none;color:#fff;
 }
