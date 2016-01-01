@@ -1,529 +1,103 @@
-<!DOCTYPE HTML>
-<html>
-<head>
-	<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
-	<meta name="viewport" content="width=device-width, initial-scale = 1.0, user-scalable = no">
-	<title>Megan & Michael</title>
-	<link rel="stylesheet" href="css/style.css" type="text/css" media="screen">
-	<link rel="stylesheet" href="css/normalize.css" type="text/css" media="screen">
-	<link rel="stylesheet" href="css/grid.css" type="text/css" media="screen">
-	
-	<link href='http://fonts.googleapis.com/css?family=Open+Sans:400,800,600,300' rel='stylesheet' type='text/css'>
-	
-	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"></script>
-	<script type="text/javascript" src="js/jquery.easing.1.3.js"></script>
-	<script src="js/jquery.sticky.js"></script>
-	<script type="text/javascript" src="js/js.js"></script>
-	<script type="text/javascript" src="js/jquery.stellar.min.js"></script>
-	<script type="text/javascript" src="js/waypoints.min.js"></script>
-	<script src="//use.typekit.net/rgf1tdw.js"></script>
-	<script>try{Typekit.load();}catch(e){}</script>
-<link href='http://fonts.googleapis.com/css?family=Elsie+Swash+Caps:400,900' rel='stylesheet' type='text/css'>	
-<link href='http://fonts.googleapis.com/css?family=Cabin' rel='stylesheet' type='text/css'>
+<!doctype html>
 
-<!--[if lt IE 9]>
-		<script src="js/html5shiv.js"></script>
-		<script src="js/respond.src.js"></script>
-		<style type="text/css">
-			.circle_img {display:none; }
-			#slide1 span {font-size:26px;}
-		</style>
-	<![endif]-->
-	
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+
+  <title>April Koh</title>
+  <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,600,300,200" rel ="stylesheet" type="text/css">
+  <meta name="description" content="April Koh's personal website.">
+  <meta name="author" content="April Koh">
+  <link rel="stylesheet" href="css/styles.css">
+  <link rel="stylesheet" href="css/jquery.fullpage.min.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+  <script src="http://code.jquery.com/jquery-1.11.3.min.js"></script>
+  <script src="http://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.11.4/i18n/jquery-ui-i18n.js">
+  <!--[if lt IE 9]>
+  <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+  <![endif]-->
+  <style>
+
+</style>
 </head>
 
-<body><div class="effect_2">
+<body>
+
+  <script src="js/jquery.fullpage.min.js"></script>
 
 
+  <div class="fixed header">
+    <a href="https://twitter.com/aprilkoh_">@<strong>april</strong>koh_</a>
+  </div>
+  <div id="fullpage">
+    <div class="section" data-anchor="lastPage" id="section-4">
+      <div class="description"><strong><a href="http://mysimplist.com"><i class="fa fa-bolt"></i>implist</strong></a>
+      <br><br>
+      co-founder - winter 2015 - now
+      <br><br>
+      <em>"The list is the origin of culture." - Umberto Eco</em>
+    </div></div>
+    <div class="section" data-anchor="thirdPage" id="section-3">
+      <div class="description"><strong><a href="http://shazam.com"><i class="fa fa-bolt"></i>hazam</strong></a>
+        <br><br>
+        product management intern - spring/summer 2015
+      </div>
+      <a href="#lastPage"><i class="fa fa-angle-double-up" id="menu" data-menuanchor="lastPage"></i></a>
+    </div>
+    <div class="section" data-anchor="secondPage" id="section-2">
+      <div class="description"><strong><a href="http://www.spylight.com"><i class="fa fa-bolt"></i>pylight</strong></a>
+        <br><br>
+        co-founder & chief of product 2013-2015
+      </div>
+      <a href="#thirdPage"><i class="fa fa-angle-double-up" id="menu" data-menuanchor="thirdPage"></i></a>
+    </div>
+    <div class="section active" id="section-1">
+      <div class="photo-container">
+        <i class = "fa fa-bolt" id="main-bolt"></i>
+        <img src="me.jpg" id="me">
+      </div>
+      <div class="description" id="intro">my favorite emoji is <i class="fa fa-bolt"></i></div>
+      <a href="#secondPage"><i class="fa fa-angle-double-up first-arrow" id="menu" data-menuanchor="secondPage"></i></a>
+      <div class="directions">
+        <div id="first-up">things are looking up!</div>
+      </div>
+    </div>
 
+  </div>
+  <script>
+  $(document).ready(function() {
+    $('#fullpage').fullpage(
+      {anchors: ['lastPage', 'thirdPage', 'secondPage']}
+    );
+    // $('img#me').load(function(){
+      // alert("?");
+    setTimeout(function(){
+      $('#main-bolt').hide();
+      $('#me').fadeIn("1000");
+    }, 1000);
+    setTimeout(function(){
+      $('.description').fadeTo("1000", 1);
+    }, 2000);
+    setTimeout(function(){
+      $('.directions').fadeTo("1000", 1);
+      $('.first-arrow').fadeTo("1000", 1);
+      bounce();
+      function bounce() {
+          $('.first-arrow').animate({
+              top: "+=10"
+          }, 300, function() {
+              $('.first-arrow').animate({
+                  top: "-=10"
+              }, 300, function() {
+                  bounce();
+              })
+          });
+      }
+    }, 3000);
+    // })
+  });
+  </script>
 
-<div class="slide" id="slide1" data-slide="1" data-stellar-background-ratio="0.5">
-	<div class="container clearfix">
-
-		<div id="content" class="grid_12">
-			<div class="filtr_bg">
-				<h1>Join Us</h1>
-				<h2>to celebrate the marriage of</h2>
-				<h3>Megan O'Brien & Michael Crayne</h3>
-				<span>May 24, 2015 in Morristown, NJ</span>
-			</div>
-			<div class="clear"></div>
-		</div>
-	</div>
-</div>
-
-
-<div class="menu">	
-	<div class="container clearfix">
-
-		<div id="logo" class="fleft">
-			<a href="index.html"><img src="images/logo.png" style="width:400px" /></a>
-		</div>
-		
-		<div id="nav" class="fright">
-			<ul class="navigation">
-				<li data-slide="1">Home</li>
-				<li data-slide="2">About</li>
-				<li data-slide="4">Our Love Story</li>
-<!-- 				<li data-slide="6">RSVP</li>
- -->				
- 				<li data-slide="8">The Wedding Party</li>
-				<li data-slide="10">Directions</li>
-				<div class="clear"></div>
-			</ul>
-		</div>
-	
-	</div>
-</div>
-
-
-<div class="slide" id="slide2" data-slide="2" data-stellar-background-ratio="0.5">
-	<div class="container clearfix">
-		
-		<div id="content" class="about_heart">
-			<img class="heart" src="images/heart_2.png" />
-			<div class="grid_6">
-				<div class="about_block">
-					<h4>About Megan</h4>
-					<img class="bride_foto" src="images/megan.jpg" alt="" />
-					<br><p>I grew up in Ho-Ho-Kus, NJ, the only town in North America with two hyphens! Growing up I always wanted a sister, but instead my parents, Julie and Michael, gave me four wonderful brothers (Chris, 24; Jonathan, 17; Teddy, 15; and Nicholas, 10).  For high school I attended Villa Walsh Academy, an all girls Catholic school in Morristown.  I then escaped winter and went to Stanford for college, where I majored in Classical Languages (Latin and Greek).  I am currently earning my Master of Divinity at Notre Dame, where I am relearning how to deal with the cold.
-					<br><br><center>Things I love:<br>
-					good food 
-					<br>
-					good conversations
-					<br>
-					board games
-					<br>
-					hanging out with my brothers
-					<br>
-					hiking
-					<br>
-					baking pretty/cute things
-					<br>
-					archery
-					<br>
-					chocolate
-					<br>
-					trying new things
-					</center>
-				</div>
-			</div>
-			<div class="grid_6 omega">
-				<div class="about_block">
-					<h4>About Michael</h4>
-					<img class="bride_foto" src="images/michael.png" alt="" />
-					<br>
-					<p>I was born in Fremont, CA to David and Marie Crayne, who had wanted a daughter but were just as joyful to be blessed with a son to be a younger brother to their eldest, Adam. I grew up in Union City, CA surrounded by my extended family (my mom is one of twelve and my dad is one of seven, so aunts, uncles, and cousins are never hard to find), which I loved, in no small part thanks to the numerous parties and endless supplies of food. I played trumpet throughout middle school and high school and met most of my friends through marching band, wind orchestra, and jazz band. I attended Stanford University where I put down the trumpet and picked up a compound bow, competing as a member of the Stanford Archery Team. I majored in Civil Engineering and minored in Italian, studying in beautiful Florence, Italy for a quarter. I work in the energy efficiency industry, which brought me to live in Portland, OR for a year and a half before I moved to South Bend, IN to be with Megan as she studies at Notre Dame.</p>
-					<div class="clear"></div>
-				</div>
-			</div>
-			
-			<div class="clear"></div>
-			<img class="icon_heart" src="images/icon1.png" />
-		</div>
-		
-	</div>
-</div>
-
-
-
-
-
-
-
-
-
-<div class="slide" id="slide4" data-slide="4" data-stellar-background-ratio="0.5">
-	<div class="container clearfix">
-		
-		<div id="content">
-			<div class="grid_12">
-				<div class="plan_block">
-					<h4>Our Love Story</h4>
-					<p>Although they had been on the archery team together for a year, it wasn’t until summer camp 2011 that Megan and Michael started really getting to know each other.  It was around that time that he started toying with the idea of her being more than a friend, but this hadn’t yet crossed her mind.  Michael put the thought aside for the summer and bided his time until the next school year. 
-					<br><br>
-					When school started up again, Megan and Michael frequently practiced on the same days.  As they spent more time together, Michael started realizing more and more that he wanted to be in a relationship with Megan.  As November approached, he saw the perfect opportunity to finally asked her out.  He gathered his courage, consulted with his roommate, and decided this was the moment.  He headed to the range, his heart beating fast, and when he got there found Megan once again trying to convince him to grow out his beard for No Shave November.  This time, Michael had his answer all planned out: “I’ll make a deal with you— I won’t shave for all of November if you’ll go on a date with me.”  Somewhat caught off guard, Megan agreed to go out to froyo with Michael.  
-					<br><br>
-					Neither of them knew what to expect, but they were both pleased to find that while they sat outside Yogurtland the hours melted away as they were drawn deeper into conversation.  Since that night their hesitant feelings have grown into a deep love, and they can’t wait to spend the rest of their lives together!</p>
-				</div>
-			</div>
-			<div class="clear"></div>
-			
-			<div class="dot_line_center">
-				<div class="dot_line_img"></div>
-				<div class="grid_6 little_respond">
-					<div class="plan_details">
-						<p>Ceremony</p>
-						<img src="images/big_moment1.jpg" />
-						<p>Saint Bartholomew's Cathedral</p>
-						<span>August, 24 2020, 10:00</span>
-					</div>
-				</div>
-				<div class="grid_6">
-					<div class="plan_foto">
-						<div class="apndks"></div>
-						<div class="dottd"></div>
-						<img src="images/big_moment1.jpg" alt="" />
-					</div>
-				</div>
-				<div class="grid_6 big_respond omega">
-					<div class="plan_details">
-						<p>Maui, Hawaii</p>
-						<span>July 2013</span>
-					</div>
-				</div>
-				<div class="clear"></div>
-				<div class="grid_6">
-					<div class="plan_details left_det">
-						<p>Half Moon Bay International Marathon</p>
-						<p>Half Moon Bay, CA</p>
-						<span>September 29, 2013</span>
-					</div>
-				</div>
-				<div class="grid_6 omega">
-					<div class="plan_foto_2">
-						<div class="apndks_2"></div>
-						<div class="dottd_2"></div>
-						<img src="images/big_moment2.jpg" alt="" />
-					</div>
-				</div>
-				<div class="clear"></div>
-				<div class="grid_6 little_respond">
-					<div class="plan_details">
-						<p>Half Moon Bay International Marathon</p>
-						<p>Half Moon Bay,	CA</p>
-						<span>September 29, 2013</span>
-					</div>
-				</div>
-				<div class="grid_6">
-					<div class="plan_foto">
-						<div class="apndks"></div>
-						<div class="dottd"></div>
-						<img src="images/proposal.gif" alt="" />
-					</div>
-				</div>
-				<div class="grid_6 big_respond omega">
-					<div class="plan_details">
-						<p>The Proposal</p><br>
-						<p>Portland Rose Gardens</p>
-						<span>February 15, 2014</span>
-					</div>
-				</div>
-				<div class="clear"></div>
-			</div>
-			<img class="icon_heart" src="images/icon1.png" />
-		</div
->	
-	</div>
-</div>
-
-
-
-
-<div class="slide" id="slide6" data-slide="6" data-stellar-background-ratio="0.5">
-	<div class="container clearfix">
-		
-<!-- 		<div id="content">
-			<div class="grid_12">
-				<div class="rsvp_block">
-					<h4>Are you attending? RSVP here!</h4>
-					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam sed ante a nisi pretium pharetra commodo ac ipsum. Cras volutpat, turpis et sollicitudin porta, nisi nunc convallis augue, sed mollis erat eros eget sem. Mauris tempus vulputate dolor, sed auctor eros pulvinar vel. Morbi mollis, velit vitae viverra suscipit, sapien tellus tincidunt sapien, quis venenatis libero dolor eu mauris.</p>
-					
-					<form method="post" action="">
-						<div class="inpt_bl">
-							<label>Your Name</label>
-							<input class="name_form" type="text" name="text" />
-						</div>
-						
-						<div class="inpt_bl">
-							<label>Number of Guests</label>
-							<div class="select">
-								<a href="#" class="slct">1</a>
-								<ul class="drop">
-									<li>1</li>
-									<li>2</li>
-									<li>3</li>
-									<li>4</li>
-									<li>5</li>
-								</ul>
-								<input type="hidden" id="select" />
-							</div>
-						</div>
-						
-						<div class="inpt_bl omega">
-							<label>You will attend...</label>
-							<div class="select2">
-								<a href="#" class="slct2">All Events</a>
-								<ul class="drop2">
-									<li>All Events</li>
-									<li>Ceremony</li>
-									<li>Restaurant</li>
-									<li>Party</li>
-								</ul>
-								<input type="hidden" id="select2" />
-							</div>
-						</div>
-						<div class="clear"></div>
-						
-						<input type="submit" class="form_btn contact_btn send_btn" value="I Am Attending" />
-					</form>
-					
-				</div>
-			</div>			
-			<div class="clear"></div>
-
-			<img class="icon_heart" src="images/icon1.png" />
-		</div> -->
-	
-	</div>
-</div>
-
-
-
-
-<div class="slide" id="slide8" data-slide="8" data-stellar-background-ratio="0.5">
-	<div class="container clearfix">
-		
-		<div id="content">
-			<div class="gallery_block">
-				<h4>The Wedding Party</h4>
-				<div class="gallery-list">
-					<!-- portfolio_block -->
-					<div>
-						<div class="img_block">
-							<div class="hover_img">
-								<img class="circle_img" src="images/circle_img.png" />
-								<img class="portf_img" src="images/groomsman1.jpg" alt="" />
-								<div class="inset_shadow"></div>
-								<div class="item_description">
-									<p>Adam Crayne</p>
-									Michael’s older and wiser brother
-								</div>
-							</div>
-						</div>
-						<div class="img_block">
-							<div class="hover_img">
-								<img class="circle_img" src="images/circle_img.png" />
-								<img class="portf_img" src="images/groomsman2.jpg" alt="" />
-								<div class="inset_shadow"></div>
-								<div class="item_description">
-									<p>Chris O'Brien</p>
-									Megan’s brother and Michael’s soon-to-be brother-in-law!
-								</div>
-							</div>
-						</div>
-						<div class="img_block">
-							<div class="hover_img">
-								<img class="circle_img" src="images/circle_img.png" />
-								<img class="portf_img" src="images/groomsman3.jpg" alt="" />
-								<div class="inset_shadow"></div>
-								<div class="item_description">
-									<p>Pawl Espinoza</p>
-									Michael’s hometown friend and future co-owner of the Oakland A’s
-								</div>
-							</div>
-						</div>
-						<div class="img_block">
-							<div class="hover_img">
-								<img class="circle_img" src="images/circle_img.png" />
-								<img class="portf_img" src="images/groomsman4.jpg" alt="" />
-								<div class="inset_shadow"></div>
-								<div class="item_description">
-									<p>Tom Rynkowski</p>
-									Michael’s Portland friend and marathon training partner
-								</div>
-							</div>
-						</div>
-						<div class="img_block">
-							<div class="hover_img">
-								<img class="circle_img" src="images/circle_img.png" />
-								<img class="portf_img" src="images/groomsman5.jpg" alt="" />
-								<div class="inset_shadow"></div>
-								<div class="item_description">
-									<p>Daniel Ramos</p>
-									Michael’s close friend since a chance meeting in 5th grade
-								</div>
-							</div>
-						</div>
-						<div class="img_block">
-							<div class="hover_img">
-								<img class="circle_img" src="images/circle_img.png" />
-								<img class="portf_img" src="images/groomsman6.jpg" alt="" />
-								<div class="inset_shadow"></div>
-								<div class="item_description">
-									<p>Nick McGee</p>
-									Michael’s college roommate and bromantic interest
-								</div>
-							</div>
-						</div>	
-						<div class="img_block">
-							<div class="hover_img">
-								<img class="circle_img" src="images/circle_img.png" />
-								<img class="portf_img" src="images/groomsman7.jpg" alt="" />
-								<div class="inset_shadow"></div>
-								<div class="item_description">
-									<p>Eric Newton</p>
-									Michael’s archery teammate and fellow raucous football fan
-								</div>
-							</div>
-						</div>	
-						<div class="clear"></div>
-
-						<div class="img_block">
-							<div class="hover_img">
-								<img class="circle_img" src="images/circle_img.png" />
-								<img class="portf_img" src="images/bridesmaid1.jpg" alt="" />
-								<div class="inset_shadow"></div>
-								<div class="item_description">
-									<p>Kathryn Ferrante</p>
-									Megan’s high school friend and pogonophile 
-								</div>
-							</div>
-						</div>
-						<div class="img_block">
-							<div class="hover_img">
-								<img class="circle_img" src="images/circle_img.png" />
-								<img class="portf_img" src="images/bridesmaid2.jpg" alt="" />
-								<div class="inset_shadow"></div>
-								<div class="item_description">
-									<p style="font-size: 15px">Margaret Koehler</p>
-									Megan’s college roommate and fellow Downton enthusiast
-								</div>
-							</div>
-						</div>
-						<div class="img_block">
-							<div class="hover_img">
-								<img class="circle_img" src="images/circle_img.png" />
-								<img class="portf_img" src="images/bridesmaid3.jpg" alt="" />
-								<div class="inset_shadow"></div>
-								<div class="item_description">
-									<p>Caroline Sonett</p>
-									Megan’s neighbor and most longstanding friendship
-								</div>
-							</div>
-						</div>
-						<div class="img_block">
-							<div class="hover_img">
-								<img class="circle_img" src="images/circle_img.png" />
-								<img class="portf_img" src="images/bridesmaid4.jpg" alt="" />
-								<div class="inset_shadow"></div>
-								<div class="item_description">
-									<p>Yon Jin April Koh</p>
-									Megan’s fellow Hohokian and favorite person to have deep conversations with
-								</div>
-							</div>
-						</div>																
-						<div class="img_block">
-							<div class="hover_img">
-								<img class="circle_img" src="images/circle_img.png" />
-								<img class="portf_img" src="images/bridesmaid5.jpg" alt="" />
-								<div class="inset_shadow"></div>
-								<div class="item_description">
-									<p>Sarah O'Brien</p>
-									Megan’s sister (in-law)— finally! 
-								</div>
-							</div>
-						</div>
-						<div class="img_block">
-							<div class="hover_img">
-								<img class="circle_img" src="images/circle_img.png" />
-								<img class="portf_img" src="images/bridesmaid6.jpg" alt="" />
-								<div class="inset_shadow"></div>
-								<div class="item_description">
-									<p>Judy Romea</p>
-									Megan’s college friend who started planning our wedding before we got engaged
-								</div>
-							</div>
-						</div>
-						<div class="img_block">
-							<div class="hover_img">
-								<img class="circle_img" src="images/circle_img.png" />
-								<img class="portf_img" src="images/bridesmaid7.jpg" alt="" />
-								<div class="inset_shadow"></div>
-								<div class="item_description">
-									<p>Sara Cullinane</p>
-									Megan’s college friend and road tripping buddy
-								</div>
-							</div>
-						</div>																							
-						<div class="clear"></div>
-					</div>   
-					<!-- //portfolio_block -->   
-				</div>
-			</div>
-			<img class="icon_heart" src="images/icon1.png" />
-		</div>
-		
-	</div>
-</div>
-
-
-
-
-
-
-
-
-
-
-<div class="slide" id="slide10" data-slide="10" data-stellar-background-ratio="0.5">
-	<div class="container clearfix">
-		
-		<div class="direction_block">
-			<h4>Directions</h4>
-			<div class="grid_6">
-				<div class="address_block">
-					<h5>Ceremony</h5>
-					<p><img class="map_pin2" src="images/map_pin2.png" />Villa Walsh Morristown, NJ</p>
-					<p>455 Western Ave. Morristown, NJ 07960</p>
-					<p>May  24, 2015 at 3:00 PM</p>
-					<p><a href="villawalsh.org">villawalsh.org</a></p>
-					<h5>Reception</h5>
-					<p>Newark Museum Newark, NJ </p>
-					<p>49 Washington St. Newark, NJ 07102</p>
-					<p>May  24, 2015 at 5:30 PM </p>
-					<p><a href="newarkmuseum.org">newarkmuseum.org</a></p>
-
-				</div>
-			</div>
-			<div class="grid_6 omega">
-				<div id="map_block"><iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d3020.994002607543!2d-74.50707899999999!3d40.784146!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c3a3fc73c43e73%3A0x9e5a72f9037c5468!2sVilla+Walsh+Academy!5e0!3m2!1sen!2sus!4v1416906879252" width="94%" height="280" frameborder="0" style="border:0"></iframe></div>
-			</div>
-			<div class="clear"></div>
-		</div>
-			<img class="icon_heart" src="images/icon1.png" style="margin-top: 30px" />
-	</div>
-	<div class="container clearfix">
-			<div id="content">
-				<div class="grid_12">
-					<div class="plan_block">
-						<div class="adorable_photo">
-							<img src="megan-and-michael-1.jpg">
-						</div>
-						<div class="adorable_photo">
-							<img src="images/megan-and-michael-3.jpg">
-						</div>
-						<div class="adorable_photo">
-							<img src="megan-and-michael-5.jpg">
-						</div>
-						<div class="adorable_photo">
-							<img src="megan-and-michael-6.jpg">
-						</div>
-					</div>
-				</div>
-			</div>
-	</div>
-</div>
-
-
-
-
-<div id="footer">
-	<div class="container clearfix">
-		<div class="copyright">Website by <a href="http://www.twitter.com/notorioty">April Koh</a> 2014</div>
-		<div id="back_top"><a class="button" title="" data-slide="1">back to top</a></div>
-	</div>
-</div>
-
-</div></body>
+</body>
 </html>
